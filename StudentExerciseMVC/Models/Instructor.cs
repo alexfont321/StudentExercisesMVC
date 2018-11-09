@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
 namespace StudentExercisesAPI.Data
 {
     public class Instructor
@@ -8,5 +11,6 @@ namespace StudentExercisesAPI.Data
         public string SlackHandle { get; set; }
         public string Specialty { get; set; }
         public Cohort Cohort { get; set; }
+        public int CohortId { get; set; }
     }
 }
